@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 		
-		<title>reveal.js - HTML5 Presentations</title>
+		<title>Object Oriented Programming</title>
 
 		<meta name="description" content="An easy to use CSS 3D slideshow tool for quickly creating good looking HTML presentations.">
 		<meta name="author" content="Hakim El Hattab">
@@ -31,8 +31,8 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<h1>Reveal.js</h1>
-					<h3 class="inverted">CSS 3D Presentations</h3>
+					<h1>Object Oriented Programming</h1>
+					<h3 class="inverted">Subtitle Here</h3>
 					<script>
 						// Delicously hacky. Look away.
 						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) ) document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
@@ -40,206 +40,467 @@
 				</section>
 				
 				<section>
-					<h2>Heads Up</h2>
+					<h2>OOP is a fuzzy concept</h2>
 					<p>
-						reveal.js is an easy to use, HTML based, presentation tool. You'll need a modern browser with 
-						support for CSS 3D transforms to see it in its full glory.
+						There is no formal definition, and every implementation brings its own features.
 					</p>
-					<p>
-						<i><small>- <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small></i>
-					</p>
+				</section>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you run the speaker notes server.
-					</aside>
+				<section>
+					<h2>So, what's the point?</h2>
 				</section>
 				
-				<!-- Example of nested vertical slides -->
 				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>
-							Slides can be nested inside of other slides,<br/>
-							try pressing <a href="#/2/1">down</a>.
+					<h2>The Three Priorities of Programming</h2>
+					<h3 class="fragment">(In no particular order)</h3>
+					<ul>
+						<li class="fragment">Simplicity (reduction of complexity)</li>
+						<li class="fragment">Performance</li>
+						<li class="fragment">Getting shit done</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>And OOP helps us with</h2>
+					<ul>
+						<li class="fragment">Simplicity</li>
+						<small>
+							<li class="fragment">Getting shit done</li>
+						</small>
+					</ul>
+				</section>
+
+				<section>
+					<h2>By providing</h2>
+					<h3 class="fragment">Modularity</h3>
+					<ul>
+						<li class="fragment">Independent (rather than interdependent) functionality</li>
+						<li class="fragment">Reusability</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Specifics please!</h2>
+				</section>
+
+				<section>
+					<h2>OOP: an overabundance of terminology</h2>
+					<p>
+						<ul>
+							<li class="fragment">Object</li>
+							<li class="fragment">Method</li>
+							<li class="fragment">Message passing</li>
+							<li class="fragment">Dynamic dispatch</li>
+							<li class="fragment">Polymorphism</li>
+							<li class="fragment">Encapsulation</li>
+							<li class="fragment">Class</li>
+							<li class="fragment">Public</li>
+							<li class="fragment">Private</li>
+							<li class="fragment">Protected</li>
+							<li class="fragment">Static</li>
+							<li class="fragment">This</li>
+							<li class="fragment">Self</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>OOP is a raft of terminology</h2>
+					<p>
+						<ul>
+							<li class="">Type</li>
+							<li class="fragment">Inheritance</li>
+							<li class="fragment">Instance</li>
+							<li class="fragment">Singleton</li>
+							<li class="fragment">Member</li>
+							<li class="fragment">Constructor</li>
+							<li class="fragment">Interface</li>
+							<li class="fragment">Protocol</li>
+							<li class="fragment">Prototype</li>
+							<li class="fragment">Mixin</li>
+							<li class="fragment">Trait</li>
+							<li class="fragment">Abstract</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>OOP is a raft of terminology</h2>
+					<p>
+						<ul>
+							<li class="fragment">Super</li>
+							<li class="fragment">Parent</li>
+							<li class="fragment">Final</li>
+							<li class="fragment">Override</li>
+						</ul>
+					</p>
+					<h3 class="fragment">Not very simple :(</h3>
+				</section>
+
+				<section>
+					<h2>But at it's core, it's about</h2>
+					<p>
+						<ul>
+							<li class="fragment">Messages</li>
+							<li class="fragment">Wait, what?</li>
+						</ul>
+					</p>
+				</section>
+
+				<section>
+					<h2>Messaging</h2>
+					<p>
+						<blockquote>
+							<p>
+								I'm sorry that I long ago coined the
+								term "objects" for this topic because it gets many people to focus on
+								the lesser idea. The big idea is "messaging".
+						</blockquote>
+
+						<p class="fragment">
+							Alan Kay, inventor of the term "Object-Oriented"
 						</p>
-						<a href="#/2/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Press down or up to navigate.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>Cornify</p>
-						<a class="test" href="http://cornify.com">
-							<img width="280" height="326" src="https://s3.amazonaws.com/hakim-static/reveal-js/cornify.gif">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 3</h2>
-						<p>That's it, time to go back up.</p>
-						<a href="#/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section>
-					<h2>Holistic Overview</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview!
 					</p>
 				</section>
 
 				<section>
-					<h2>Works in Mobile Safari</h2>
-					<p>
-						Try it out! You can swipe through the slides pinch your way to the overview.
-					</p>
+					<h2>Well, what could that mean?</h2>
+					<h3 class="fragment">Who knows, let's make a game!</h3>
 				</section>
 
 				<section>
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like:
-					</p>
-					<ul>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=cube">Cube</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=page">Page</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=concave">Concave</a></li>
-						<li><a href="http://lab.hakim.se/reveal-js/?transition=linear">Linear</a></li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Marvelous Unordered List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
-				
-				<section>
-					<h2>Fantastic Ordered List</h2>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
 					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
+						<li class="fragment">Hero character</li>
 					</ol>
 				</section>
 
 				<section>
-					<section data-state="alert">
-						<h2>Global State</h2>
-						<p>
-							Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-							will be added as a class to the document element when the slide is open. This let's you
-							apply broader style changes, like switching the background.
-						</p>
-						<a href="#/7/1" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="blackout">
-						<h2>"blackout"</h2>
-						<a href="#/7/2" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png">
-						</a>
-					</section>
-					<section data-state="soothe">
-						<h2>"soothe"</h2>
-						<a href="#/7/0" class="image">
-							<img width="178" height="238" src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
-
-				<section data-state="customevent">
-					<h2>Custom Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code contenteditable style="font-size: 18px; margin-top: 20px;">Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						For years there has been a theory that millions of monkeys typing at random on millions of typewriters would 
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.
-					</blockquote>
-				</section>
-				
-				<section>
-					<h2>Pretty Code</h2>
+					<h2>Tactical: A Turn Based Strategy</h2>
 					<pre><code contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-    
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i < len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) ) {
-        node.className += ' roll';
-      }
-    };
-  }
+function create_hero( fname, lname ) {
+	return { "first name": fname, "last name": lname };
 }
 					</code></pre>
-					<p>Courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
 				</section>
-				
+
 				<section>
-					<h2>Intergalactic Interconnections</h2>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Hero character</li>
+						<li class="fragment">Character movement</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<pre><code contenteditable>
+function move ( hero, distance ) {
+	for ( var i = 0; i < distance; i++ ) {
+		move_right_foot( hero );
+		move_left_foot( hero );
+	}
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<pre><code contenteditable>
+// TRAVEL LIB
+function travel_fearlessly( hero ) {
+	...;
+	...;
+	move( hero, 10 );
+	...;
+}
+
+function travel_timidly( hero ) {
+	...;
+	...;
+	move( hero, 2 );
+	...;
+}
+
+function travel_internationally( hero ) {
+	...;
+	...;
+	move( hero, 100 );
+	...;
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Hero character</li>
+						<li>Heroic movement</li>
+						<li class="fragment">Villain</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<pre><code contenteditable>
+function create_villain( fname, lname ) {
+	return { "first name": fname, "last name": lname };
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Hero character</li>
+						<li>Heroic movement</li>
+						<li>Villain</li>
+						<li class="fragment">Villainous movement
+							<ul class="fragment">
+								<li>Villains move sinisterly (left foot first)</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Now we have a problem</h2>
+					<ul>
+						<li class="fragment">We've already created travel lib</li>
+						<li class="fragment">How do we support villainous travel without rewriting it?</li>
+						<li class="fragment">Let's modify "move" to support both heros and villains.</li>
+						<li class="fragment">First, we'll need to know who we're dealing with.</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Adding types to character classes.</h3>
+					<pre><code contenteditable>
+function create( what, fname, lname ) {
+	return { "type": what,
+		 "first_name": fname,
+		 "last_name": lname };
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Moving flexibly</h3>
+					<pre><code contenteditable>
+// Remains compatible with travel lib
+function move ( person, distance ) {
+	if ( person["type"] === "hero" ) {
+		for ( var i = 0; i < distance; i++ ) {
+			move_right_foot( person );
+			move_left_foot( person );
+		}
+	}
+	else if ( person["type"] === "villain" ) {
+		for ( var i = 0; i < distance; i++ ) {
+			move_left_foot( person );
+			move_right_foot( person );
+		}
+	}
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Hero character</li>
+						<li>Heroic movement</li>
+						<li>Villain</li>
+						<li>Villainous movement
+							<ul>
+								<li>Villains move sinisterly (left foot first)</li>
+							</ul>
+						</li>
+						<li class="fragment">Duck
+							<ul>
+								<li>Waddles</li>
+							</ul>
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<pre><code contenteditable>
+function move ( thing, distance ) {
+	if ( thing["type"] === "hero" ) {
+		for ( var i = 0; i < distance; i++ ) {
+			move_right_foot( thing );
+			move_left_foot( thing );
+		}
+	}
+	else if ( thing["type"] === "villain" ) {
+		for ( var i = 0; i < distance; i++ ) {
+			move_left_foot( thing );
+			move_right_foot( thing );
+		}
+	}
+	else if ( thing["type"] === "duck" ) {
+		for ( var i = 0; i < distance; i++ ) {
+			waddle( thing );
+		}
+	}
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Tactical: A Turn Based Strategy</h2>
+					<h3>Requirements:</h3>
+					<ol>
+						<li>Hero character</li>
+						<li>Heroic movement</li>
+						<li>Villain</li>
+						<li>Villainous movement
+							<ul>
+								<li>Villains move sinisterly (left foot first)</li>
+							</ul>
+						</li>
+						<li>Duck
+							<ul>
+								<li>Waddles</li>
+							</ul>
+						</li>
+						<li class="fragment">Giraffe</li>
+						<li class="fragment">Hermit Crab</li>
+						<li class="fragment">Oh, and all characters have unique striking ability</li>
+						<li class="fragment">And battle one another!</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>So, our approach doesn't scale.</h2>
 					<p>
-						You can link between slides internally,<br/>
-						<a href="#/2/3">like this</a>.
+						Wouldn't it be nice if instead of the whole
+						system knowing how everyone does everything, we could just tell our
+						characters to do something (i.e., send them messsages) and they would
+						do the the right thing for their character class?
+					</p>
+					<p class="fragment">
+						Sounds lovely! First, we'll need a map of messages and the
+						<em>method</em> in which each character performs that action.
 					</p>
 				</section>
 
 				<section>
-					<h2>Fragmented Views</h2>
-					<p>Hit the next arrow...</p>
-					<p class="fragment">... to step through ...</p>
-					<ol>
-						<li class="fragment"><code>any type</code></li>
-						<li class="fragment"><em>of view</em></li>
-						<li class="fragment"><strong>fragments</strong></li>
-					</ol>
+					<h2>Map of methods</h2>
+					<pre><code contenteditable>
+var method_map = {};
+
+method_map['move']  =  {};
+method_map['move']['hero']    =  function( hero, distance ) { move_heroically( hero ); };
+method_map['move']['duck']    =  function( duck, distance ) { move_waddlingly( duck); };
+method_map['move']['villain'] =  function( villain, distance ) { move_sinisterly( villain ) };
+
+map['strike']  =  {};
+map['strike']['hero']     =  function( hero, target ) { punch( hero, target ); };
+map['strike']['duck']     =  function( duck, target ) { duck_punch( duck, target ); };
+map['strike']['villain']  =  function( villain, target ) { crotch_kick( villain, target ); };
+					</code></pre>
 				</section>
-				
+
 				<section>
-					<h2>Spectacular image!</h2>
-					<a class="image" href="http://hakim.se/experiments/html5/breakdom/" target="_blank">
-						<img width="320" height="412" src="https://s3.amazonaws.com/hakim-static/reveal-js/breakdom.png">
-					</a>
+					<h2>Now we need a way to dispatch the correct method for the correct character class.</h2>
+					<pre><code contenteditable>
+function dispatch( who, what, args ) {
+	var method = method_map[ what ][ who['type'] ];
+	method( who, args );
+}
+					</code></pre>
 				</section>
-				
+
 				<section>
-					<h2>Stellar Links</h2>
+					<h2>Let's do it!</h2>
+					<pre><code contenteditable>
+var hero = create( 'hero', 'Alan', 'Kay' );
+dispatch( hero, 'move', 2 );
+
+var villain = create( 'villain', 'Auric', 'Goldfinger' );
+dispatch( villain, 'move', 2 );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>Now for something really cool</h2>
+					<pre><code contenteditable>
+var crab = create( 'crab', 'Captain Eugene H. "Armor Abs"', 'Krabs' );
+
+method_map['move']['crab']  =  function( crab, distance ) { sidle( crab, distance ); };
+method_map['strike']['crab']  =  function( crab, target ) { pinch( crab, target ); };
+
+// Beginnings of battle lib
+function battle( one, two ) {
+	dispatch( one, 'strike', two );
+	dispatch( two, 'strike', one );
+}
+
+battle( crab, hero );
+battle( villain, duck );
+					</code></pre>
+				</section>
+
+				<section>
+					<h2>And WHAM! We've created our own OO system!</h2>
+					<h3 class="fragment">It's got</h3>
 					<ul>
-						<li><a href="https://github.com/hakimel/reveal.js">Source code on github</a></li>
-						<li><a href="http://hakim.se/projects/reveal-js">Read more on my site</a></li>
-						<li><a href="http://twitter.com/hakimel">Follow me on Twitter</a></li>
+						<li class="fragment">Objects</li>
+						<li class="fragment">Messages</li>
+						<li class="fragment">Methods</li>
+						<li class="fragment">Dynamic dispatch</li>
+						<li class="fragment">Polymorphism</li>
+						<li class="fragment">Some sort of types</li>
 					</ul>
 				</section>
+
 				
 				<section>
-					<h1>THE END</h1>
-					<h3 class="inverted">BY Hakim El Hattab / hakim.se</h3>
+					<h2>Albeit, a pretty crude one</h2>
+					<h3 class="fragment">It's not got</h3>
+					<ul>
+						<li class="fragment">Interfaces - specification of what messages objects respond to</li>
+						<li class="fragment">Inheritance - hierarchical types and code sharing</li>
+						<li class="fragment">Classes - interface + inheritance + implementation + object construction/initialization + ...</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>But wait, that doesn't look like an OO system I've seen.</h2>
+					<pre><code contenteditable>
+dispatch( hero, 'move', 2 );    // WTF?
+hero.move( 2 )                  // Yeah!
+					</code></pre>
+
+					<h3 class="fragment">Dirty secret: the rest is just sugar</h3>
+				</section>
+
+				<section>
+					<h1>Pretty drawings</h1>
+				</section>
+
+				<section>
+					<img src="images/programming-paradigms.jpg" alt="" />
+				</section>
+
+				<section>
+					<img src="images/bad-oop.jpg" alt="" />
+				</section>
+
+				<section>
+					<h2>Discussion</h2>
+					<h3>Further reading</h3>
+					<a href="http://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html">http://wcook.blogspot.com/2012/07/proposal-for-simplified-modern.html</a>
 				</section>
 			</div>
 
@@ -287,7 +548,7 @@ function linkify( selector ) {
 					history: true,
 					
 					theme: query.theme || 'default', // default/neon/beige
-					transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+					transition: query.transition || 'linear' // default/cube/page/concave/linear(2d)
 				});
 
 			} );
